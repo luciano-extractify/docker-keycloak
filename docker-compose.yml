@@ -16,6 +16,8 @@ services:
       - postgresql
     ports:
       - "80:8080"
+    volumes:
+      - './prime:/opt/bitnami/keycloak/themes/prime'
 
 volumes:
   postgresql_data:
